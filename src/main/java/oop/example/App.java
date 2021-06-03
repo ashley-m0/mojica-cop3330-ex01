@@ -22,19 +22,29 @@ Write a version of the program that displays the greeting in a GUI window.
 
 public class App
 {
+    //Class Variable
+    static Scanner input = new Scanner(System.in);
+
     public static void main( String[] args )
     {
-        Scanner input = new Scanner(System.in);
+        App myApp = new App();
 
-        //input
+        String name = myApp.readName();
+        String outputString = myApp.generateOutputString(name);
+        myApp.printOutput(outputString);
+    }
+
+    public void printOutput(String outputString) {
+        System.out.println(outputString);
+    }
+
+    public String readName() {
         System.out.println( "What is your name?" );
         String name = input.nextLine();
+        return name;
+    }
 
-        //string concatenation
-        String output = "Hello, " + name + ", nice to meet you!";
-
-        //output
-        System.out.println(output);
-
+    public String generateOutputString(String name) {
+        return "Hello, " + name + ", nice to meet you!";
     }
 }
