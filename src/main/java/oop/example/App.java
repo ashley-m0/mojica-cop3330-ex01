@@ -3,6 +3,11 @@ package oop.example;
 import java.util.Scanner;
 
 /*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Ashley Mojica
+ */
+
+/*
 Exercise 1 - Saying Hello
 
 Create a program that prompts for your name and prints a greeting using your name.
