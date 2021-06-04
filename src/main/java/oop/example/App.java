@@ -47,4 +47,5 @@ public class App
     public String generateOutputString(String name) {
         return "Hello, " + name + ", nice to meet you!";
     }
+
 }
